@@ -20,3 +20,6 @@ student_registration_fe01/build/
 # OS-generated files
 .DS_Store
 Thumbs.db
+
+id_rsa.pub
+id_rsa.pub.pub
