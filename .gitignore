@@ -1,0 +1,22 @@
+# Ignore Node.js dependencies
+student_registration_be/node_modules/
+student_registration_fe01/node_modules/
+
+
+# Ignore environment files
+student_registration_be/.env
+student_registration_fe01/.env
+
+# Ignore build files
+student_registration_fe01/build/
+
+# Ignore logs
+*.log
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
