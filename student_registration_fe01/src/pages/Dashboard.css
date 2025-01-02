@@ -1,0 +1,261 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: #000000;
+
+}
+
+nav {
+  background: #000000;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-logo {
+    width: 302px;
+    height: 74px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  line-height: 80px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #ff5e0f;
+  transition: 0.5s;
+}
+
+/* Hamburger Menu Icon */
+.checkbtn {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 890px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  ul.open {
+    display: flex;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a.active,
+  a:hover {
+    background: none;
+    color: #ff5e0f;
+  }
+}
+
+/* Dashboard Content Styling */
+.dashboard-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard-content h1 {
+  margin-top: 30px;
+  color: #333;
+  font-size: 36px;
+}
+
+.dashboard-content p {
+  margin-top: 10px;
+  color: #555;
+  font-size: 18px;
+}
+
+
+/* .navbar-logo-container {
+    width: 316px;
+    height: 74px;
+    flex-shrink: 0;
+    fill: #000;
+}
+.navbar-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.navbar-links-container a {
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--Secondary-White,#fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.navbar-button-container {
+    display: flex;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 30px;
+    background: linear-gradient(90deg,#ff5e0f,#cb2b27 117.2%);
+    box-shadow: 0 1px 2px 0 rgba(105,81,255,.05);
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    width: 100%;
+   .href{
+    text-decoration: none;
+   } 
+} */
+
+/* Dashboard css */
+
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-image, .profile-name, .user-email, .registration-id {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.separator {
+    width: 700px;
+    border-top: 1px solid #000;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+thead{
+  background-color: rgb(228 240 245);
+}
+
+tr {
+    border: 2px solid rgb(140 140 140);
+}
+
+th, td {
+    border: 2px solid rgb(140 140 140);
+    padding: 10px;
+    text-align: center;
+}
+@media screen  and ( max-width:768px){
+    #navBar{
+        position: relative;
+        width: 80%;
+    }
+    g10x{
+        height: auto;
+        width: auto;
+    }
+}
+#navBar{
+    
+    
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+      padding-right: 0px;
+      padding-left: 0px;
+    gap: 10px;
+    position: fixed;
+    background: #000;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    box-sizing: border-box;
+
+}
+.nav_photo{
+    width: 100px;
+    height: 100px;
+}
+.g10x{
+    height: 74px;
+    width: 302px;
+}

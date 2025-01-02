@@ -1,11 +1,23 @@
 import React from "react";
-import StudentRegistration from "./pages/StudentRegistration";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 
 const App = () => {
   return (
-    <div>
-      <StudentRegistration />
-    </div>
+    <Router>
+      <div className="app-container">
+        {/* Navbar */}
+        {/* <Navbar /> */}
+
+        {/* Main Content */}
+        <main>
+          <AppRoutes />
+        </main>
+
+        {/* Footer */}
+        {/* <Footer /> */}
+      </div>
+    </Router>
   );
 };
 
